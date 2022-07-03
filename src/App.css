@@ -1,38 +1,232 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.login-page {
+  background-color: #43c6ac;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.login-page > h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-card {
+  width: 511px;
+  height: 383px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 10px;
 }
+.login-btn {
+  width: 225px;
+  height: 59px;
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 10px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: calc(50% - 112.5px);
+  margin-right: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.login-btn:active {
+  background: #000000;
   color: white;
 }
+.login-id {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-left: 76px;
+  margin-top: 75px;
+  height: 26px;
+}
+.login-parol {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-left: 76px;
+  margin-top: 31px;
+  height: 26px;
+}
+.login-id-input {
+  width: 325px;
+  height: 59px;
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 10px;
 
-.App-link {
-  color: #61dafb;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-left: 69px;
+  padding-left: 48px;
+}
+.login-id-input:focus {
+  outline: none;
+  box-shadow: 3px 3px 0px 1px black;
+}
+.login-parol-input {
+  width: 325px;
+  height: 59px;
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 10px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-left: 69px;
+  padding-left: 48px;
+}
+.login-parol-input:focus {
+  outline: none;
+  box-shadow: 3px 3px 0px 1px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-admin {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+
+  width: 325px;
+  height: 34px;
+  margin-top: 45px;
+  margin-left: 93px;
+  text-align: center;
+}
+.client-home {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #43c6ac;
+}
+.client-info-card {
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  width: 400px;
+  height: 600px;
+  margin-left: 100px;
+  margin-top: calc(50vh - 300px);
+}
+.client-info-card > h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  color: #000000;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+}
+.client-info-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+.client-info-left {
+  width: calc(50% - 15px);
+  height: 25px;
+  text-align: right;
+  display: inline-block;
+}
+.client-info-right {
+  display: inline-block;
+  width: calc(50% - 15px);
+  margin-left: 30px;
+  height: 40px;
+  text-align: left;
+}
+.pasport-info {
+  background-color: #2e2e2e;
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  width: 130px;
+  padding-left: 3px;
+  height: 28px;
+  text-align: center;
+  margin-left: calc(100% - 130px);
+}
+.pasport-seriya {
+  margin-left: 5px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.pasport-seriya-hide {
+  background-color: #2e2e2e;
+  border: none;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  display: inline-block;
+}
+.pasport-info-right {
+  background-color: #2e2e2e;
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  width: 130px;
+  padding-left: 3px;
+  height: 28px;
+  text-align: left;
+  margin-left: 0px;
+  text-align: center;
+}
+
+.tolashi-kerak {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  margin-bottom: 10px;
 }
