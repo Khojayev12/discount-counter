@@ -1,13 +1,87 @@
 import { useState } from "react";
 import AdminHome from "./AdminHome";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import { Canvas } from "reaflow";
-import {IoExitOutline} from "react-icons/io5"
+import { IoExitOutline } from "react-icons/io5";
+import ReactFlow from 'react-flow-renderer';
+
+const initialNodes = [
+    {
+      id: '1',
+      type: 'input',
+      data: { label: <div className="flow-chart-diag" > 1-gen </div>},
+      position: { x: 0, y: 25 },
+    },
+  
+    {
+      id: '21',
+      // you can also pass a React component as a label
+      data: { label: <div className="flow-chart-diag" > 2-gen </div>},
+      position: { x: 0, y: 100 },
+    },
+    {
+      id: '31',
+      data: { label: <div className="flow-chart-diag" > 3-gen </div> },
+      position: { x: -187.5, y: 175 },
+    },
+    {
+      id: '32',
+      data: { label: <div className="flow-chart-diag" > 3-gen </div> },
+      position: { x: 187.5, y: 175 },
+    },
+    {
+      id: '41',
+      data: { label: <div className="flow-chart-diag" > 4-gen </div> },
+      position: { x: -275, y: 250 },
+    },
+    {
+      id: '42',
+      data: { label: <div className="flow-chart-diag" > 4-gen </div> },
+      position: { x: -100, y: 250 },
+    },
+    {
+      id: '43',
+      data: { label: <div className="flow-chart-diag" > 4-gen </div> },
+      position: { x: 100, y: 250 },
+    },
+    {
+      id: '44',
+      data: { label: <div className="flow-chart-diag" > 4-gen </div> },
+      position: { x: 275, y: 250 },
+    },
+  ];
+  
+  const initialEdges = [
+    { id: 'e1-21', source: '1', target: '21' },
+    { id: 'e21-31', source: '21', target: '31' },
+    { id: 'e21-32', source: '21', target: '32' },
+    { id: 'e31-41', source: '31', target: '41' },
+    { id: 'e31-42', source: '31', target: '42' },
+    { id: 'e32-43', source: '32', target: '43' },
+    { id: 'e32-44', source: '32', target: '44' },
+
+  ];
+  
+  function Flow() {
+    const [nodes, setNodes] = useState(initialNodes);
+    const [edges, setEdges] = useState(initialEdges);
+  
+    return <ReactFlow nodes={nodes} edges={edges} fitView style={{
+        width:"55vw",
+        backgroundColor:"white",
+        height:"calc(100vh - 100px)",
+        position:"fixed",
+        top:"50px",
+        left:"40vw",
+        border:"2px solid black",
+        borderRadius:"10px"
+    }} />;
+  }
+  
 
 export default function Home(props) {
-  const [isAdmin, setIsAdmin] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(true);
   if (isAdmin) {
-    return <AdminHome />;
+    return <AdminHome selectedPage={props.selectedPage} SelectPage={props.SelectPage} />;
   } else {
     return <ClientHome />;
   }
@@ -20,78 +94,7 @@ const ClientHome = (props) => {
     setShowSeriya(!showSeriya);
   };
 
-  const nodes = [
-    {
-      id: "1",
-      text: "1 gen",
-    },
-    {
-      id: "2",
-      text: "2 gen",
-    },
-    {
-      id: "3",
-      text: "3 gen",
-    },
-    {
-      id: "4",
-      text: "4 gen",
-    },
-    {
-      id: "5",
-      text: "5 gen",
-    },
-    {
-      id: "6",
-      text: "6 gen",
-    },
-    {
-      id: "7",
-      text: "7 gen",
-    },
-    {
-      id: "8",
-      text: "8 gen",
-    },
-  ];
-
-  const edges = [
-    {
-      id: "1-2",
-      from: "1",
-      to: "2",
-    },
-    {
-      id: "2-3",
-      from: "2",
-      to: "3",
-    },
-    {
-      id: "2-4",
-      from: "2",
-      to: "4",
-    },
-    {
-      id: "3-5",
-      from: "3",
-      to: "5",
-    },
-    {
-      id: "3-6",
-      from: "3",
-      to: "6",
-    },
-    {
-      id: "4-7",
-      from: "4",
-      to: "7",
-    },
-    {
-      id: "4-8",
-      from: "4",
-      to: "8",
-    },
-  ];
+  
 
   return (
     <div className="client-home">
@@ -151,8 +154,14 @@ const ClientHome = (props) => {
         <div className="client-info-text client-info-right">2,700,000 so'm</div>
       </div>
 
-      <Canvas className="diag" nodes={nodes} edges={edges} width="50%" height="70vh" maxHeight={1000} maxWidth={1000} />
-      <div className="client-log-out" >Tizimdan chiqish <IoExitOutline style={{fontSize:"29px", position:"fixed", top:"6.5px"}} /> </div>
+<Flow />
+     
+      <div className="client-log-out">
+        Tizimdan chiqish{" "}
+        <IoExitOutline
+          style={{ fontSize: "29px", position: "fixed", top: "6.5px" }}
+        />{" "}
+      </div>
     </div>
   );
 };

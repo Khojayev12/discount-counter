@@ -1,11 +1,10 @@
-import { useState } from "react";
 import HomeBtn from "../Media/Homehome.svg";
 import AddUserBtn from "../Media/Add useraddUser.svg";
 import SuperBtn from "../Media/Userssuper.svg";
 import SettingsBtn from "../Media/Settings.svg";
+import {Link} from "react-router-dom"
 import "../Admin.css";
-import { Link } from "react-router-dom";
-export default function AdminHome(props) {
+export default function Settings(props) {
   const selectedPage = props.selectedPage;
   return (
     <div className="admin-home">

@@ -232,21 +232,21 @@
   margin-bottom: 10px;
 }
 
-.diag{
-    position: fixed;
-    top: 15vh;
-    left: 40%;
-    background-color: #43c6ac;
-    border: #000000 2px solid;
+.diag {
+  position: fixed;
+  top: 15vh;
+  left: 40%;
+  background-color: #43c6ac;
+  border: #000000 2px solid;
 }
-.client-log-out{
-    position: fixed;
-    top: 10px;
-    right: 40px;
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 19px;
-line-height: 22px;
-color: white;
+.client-log-out {
+  position: fixed;
+  top: 10px;
+  right: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+  color: white;
 }

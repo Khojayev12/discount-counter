@@ -1,11 +1,10 @@
-import { useState } from "react";
 import HomeBtn from "../Media/Homehome.svg";
 import AddUserBtn from "../Media/Add useraddUser.svg";
 import SuperBtn from "../Media/Userssuper.svg";
 import SettingsBtn from "../Media/Settings.svg";
+import {Link} from "react-router-dom"
 import "../Admin.css";
-import { Link } from "react-router-dom";
-export default function AdminHome(props) {
+export default function User(props) {
   const selectedPage = props.selectedPage;
   return (
     <div className="admin-home">
@@ -22,7 +21,7 @@ export default function AdminHome(props) {
               props.SelectPage("home");
             }}
           >
-            <img src={HomeBtn} className="menu-svg" alt=""/>
+            <img src={HomeBtn} className="menu-svg" alt="" />
           </div>
         </Link>
         <Link to="/user">
@@ -52,7 +51,7 @@ export default function AdminHome(props) {
               props.SelectPage("super");
             }}
           >
-            <img src={SuperBtn} className="menu-svg" alt=""/>
+            <img src={SuperBtn} className="menu-svg" alt="" />
           </div>
         </Link>
         <Link to="/settings">
