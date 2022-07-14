@@ -70,6 +70,71 @@ export default function SuperUsers(props) {
           </div>
         </Link>
       </div>
+      <div className="super-page" >
+        <div className="super-main" >Asosiy foydalanuvchilar</div>
+        <div className="super-table-head" >
+          <div className="super-table-kalla" >Ism, Familiya</div>
+          <div className="super-table-kalla" >Ism, Familiya</div>
+          <div className="super-table-kalla" >Tizimda ro'yxatdan o'tgan sana</div>
+        </div>
+        <div className="super-data" >
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          <div className="super-column" > Palonchiyev Palonchi </div>
+          <div className="super-column" >AB1234567</div>
+          <div className="super-column" >22.06.2022</div>
+          
+        </div>
+      </div>
     </div>
   );
 }

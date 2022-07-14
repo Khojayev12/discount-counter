@@ -28,7 +28,257 @@
   justify-content: center;
   align-items: center;
 }
-.menu-svg{
-    font-size: 18px;
-    margin-top: 19.5px;
+.menu-svg {
+  font-size: 18px;
+  margin-top: 19.5px;
+}
+.sozlamalar-card {
+  width: calc(100% - 194px);
+  height: 80vh;
+  position: absolute;
+  top: 10vh;
+  left: 97px;
+  background-color: white;
+  border: 2px black solid;
+  border-radius: 10px;
+}
+.sozlamalar-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: #000000;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+.bonus-bir {
+  width: 100%;
+}
+.bonus-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 22px;
+  color: #000000;
+  display: inline-block;
+  width: 60%;
+  text-align: right;
+}
+.bonus-bir-input {
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+}
+.bonus-ikki-input {
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+}
+.add-user-card {
+  width: calc(100% - 194px);
+  height: 80vh;
+  margin-top: 5vh;
+  margin-left: 97px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.add-user-card > h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: #000000;
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+.add-user-left {
+  width: 50%;
+  display: inline-block;
+}
+.add-user-right {
+  width: 50%;
+  display: inline-block;
+}
+.add-user-sub {
+  width: 48%;
+  display: inline-block;
+  text-align: right;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 22px;
+  margin-top: 30px;
+  margin-right: 1%;
+}
+.add-user-sub-right {
+  width: 48%;
+  display: inline-block;
+  text-align: left;
+}
+.add-user-input {
+  background: #a3e3d7;
+  border: 1px solid #000000;
+  width: 70%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  height: 32px;
+
+  color: #000000;
+}
+.add-user-input::placeholder,
+.add-user-input-2::placeholder {
+  color: #000000;
+  font-weight: 300;
+}
+
+.add-right-1,
+.add-right-2,
+.add-right-3 {
+  width: 33%;
+  display: inline-block;
+  margin-top: 15px;
+}
+.add-right-1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 22px;
+  margin-top: 30px;
+  margin-right: 1%;
+  text-align: right;
+}
+.add-user-input-2 {
+  background: #a3e3d7;
+  border: 1px solid #000000;
+  width: 90%;
+  margin-left: 5%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  height: 32px;
+
+  color: #000000;
+}
+
+.add-cancel {
+  width: calc(49% - 97px);
+  text-align: right;
+  display: inline-block;
+  margin-left: 97px;
+  margin-right: 2%;
+  margin-top: 10px;
+}
+.add-save {
+  width: calc(49% - 97px);
+  text-align: left;
+  display: inline-block;
+}
+.add-cancel-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 22px;
+
+  color: #c64343;
+  text-align: center;
+  width: 170px;
+  height: 32px;
+}
+
+.add-cancel-save {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 22px;
+
+  color: #43c6ac;
+  text-align: center;
+  width: 170px;
+  height: 32px;
+}
+
+.super-page {
+  width: calc(100% - 194px);
+  height: 80vh;
+  margin-top: 10vh;
+  margin-left: 97px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.super-main {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-align: center;
+  margin-top: 40px;
+}
+.super-table-head {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+  border-bottom: #000000 solid 1px;
+}
+.super-table-kalla {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+.super-data {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
+  overflow: auto;
+  height: calc(100% - 150px);
+}
+.super-column {
+  width: 33%;
+  display: inline-block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+.download-btn {
+  background: #a3e3d7;
+  border: 1px solid #000000;
+  width: 330px;
+  height: 75px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 22px;
+
+  color: #000000;
+  margin-left: calc(50% - 165px);
+  margin-top: calc(100vh - 526px);
 }
